@@ -77,6 +77,9 @@ window.addEventListener(`load`, e => {
         if (e.key == `ArrowDown` || e.key == `s` || e.key == `S`) {
             ddown = true;
         }
+        
+        if (e.key == `r`)
+            gameOver();
 
         if (e.key == ` `) {
             if (start) {
