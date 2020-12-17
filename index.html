@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div id="start-screen">
+        <p>Box Ninja</p>
+        <button id="start-btn">start</button>
+    </div>
+
+    <div id="gameover-screen">
+        <p>Game Over!</p>
+    </div>
+
+    <canvas id="gameBoard">
+        Sorry, your browser does not support html canvas.
+    </canvas>
+
+    <div id="instruction">
+        <span>Instructions:</span> <br> <br> <br>
+        <img src="assets/instructions/closed-door.png" id="closed-door"> <span>&nbsp;Closed Door</span> <br> <br>
+        <img src="assets/instructions/open-door.png" id="open-door"> <span>&nbsp;Open Door</span> <br> <br>
+        &nbsp;&nbsp;<img src="assets/instructions/key.png" id="key"> <span>&nbsp;&nbsp;Key</span> <br> <br> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Movement:</span> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="assets/instructions/keyboard-arrows.png" width="120" height="120"> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="assets/instructions/keyboard-wasd.png" width="120" height="77">
+        <br> <br> <br>
+        <p id="all-levels">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All Levels</p>
+    </div>
+    <button id="open-inst"><img src="assets/arrow-right.png" width="20" height="20"></button>
+
+    <script src="scripts/effects/spark.js"></script>
+    <script src="scripts/effects/sparkSystem.js"></script>
+    <script src="scripts/effects/blast.js"></script>
+    <script src="scripts/effects/blastSystem.js"></script>
+    <script src="scripts/effects/friction.js"></script>
+    <script src="scripts/effects/frictionSystem.js"></script>
+    <script src="scripts/effects/twinkle.js"></script>
+    <script src="scripts/effects/twinkleSystem.js"></script>
+    <script src="scripts/movingplat.js"></script>
+    <script src="scripts/deathBlock.js"></script>
+    <script src="scripts/laser.js"></script>
+    <script src="scripts/laserBeam.js"></script>
+    <script src="scripts/springboard.js"></script>
+    <script src="scripts/trapdoor.js"></script>
+    <script src="scripts/level.js"></script>
+    <script src="scripts/key.js"></script>
+    <script src="scripts/door.js"></script>
+    <script src="scripts/fakeDoor.js"></script>
+    <script src="scripts/platform.js"></script>
+    <script src="scripts/player.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

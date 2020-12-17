@@ -1,0 +1,166 @@
+html {
+    background-image: url(../test.png);
+    background-size: cover;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    height: 768px;
+}
+
+@font-face {
+    font-family: coc;
+    src: url(../assets/coc-font.ttf);
+}
+
+#gameBoard {
+    position: absolute;
+    background-color: transparent;/*rgb(244, 244, 244);*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#instruction {
+    position: absolute;
+    top: 0px;
+    left: -440px;
+    z-index: 10;
+    width: 400px;
+    height: 100%;
+    background-color: rgb(51, 51, 51);
+    padding: 20px;
+    border-right: 3px solid rgb(255, 153, 0);
+    transition: 1s;
+}
+
+#instruction span {
+    font-family: coc;
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+}
+
+#instruction p {
+    font-family: coc;
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-bottom: 5px solid rgb(255, 255, 255);
+}
+
+#closed-door {
+    vertical-align: -100%;
+}
+
+#open-door {
+    vertical-align: -100%;
+}
+
+#key {
+    transform: rotateZ(0deg);
+}
+
+#open-inst {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 100px;
+    border-top-right-radius: 70%;
+    border-bottom-right-radius: 70%;
+    border: 3px solid rgb(255, 153, 0);
+    border-left: none;
+    background-color: rgb(240, 140, 0);
+    color: rgb(255, 255, 255);
+    transition: 1s;
+    cursor: pointer;
+}
+
+#open-inst img {
+    margin-left: -5px;
+}
+
+#start-screen {
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    /* background-image: url("../assets/background.png"); */
+    background-color: transparent;
+    font-family: coc;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    z-index: 10;
+    opacity: 1;
+}
+
+#start-screen p {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5em;
+    width: 100%;
+}
+
+#start-btn {
+    font-family: coc;
+    background-color: rgba(255, 0, 0, 0.5);
+    border: 3px solid rgb(199, 0, 0);
+    border-radius: 10px;
+    padding: 10px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+#gameover-screen {
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    background: none;
+    font-family: coc;
+    text-align: center;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    opacity: 0;
+}
+
+#gameover-screen p {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5em;
+    width: 100%;
+}
+
+#restart-btn {
+    font-family: coc;
+    background-color: rgba(255, 0, 0, 0.5);
+    border: 3px solid rgb(199, 0, 0);
+    border-radius: 10px;
+    padding: 10px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
